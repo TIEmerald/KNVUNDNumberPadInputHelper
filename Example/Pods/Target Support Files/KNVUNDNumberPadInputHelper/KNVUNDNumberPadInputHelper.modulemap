@@ -1,0 +1,6 @@
+framework module KNVUNDNumberPadInputHelper {
+  umbrella header "KNVUNDNumberPadInputHelper-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "KNVUNDNumberPadInputHelper",
+  "version": "0.1.0",
+  "summary": "A short description of KNVUNDNumberPadInputHelper.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/niyejunze.j@gmail.com/KNVUNDNumberPadInputHelper",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "niyejunze.j@gmail.com": "daniel@abacus.co"
+  },
+  "source": {
+    "git": "https://github.com/niyejunze.j@gmail.com/KNVUNDNumberPadInputHelper.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "KNVUNDNumberPadInputHelper/Classes/**/*"
+}

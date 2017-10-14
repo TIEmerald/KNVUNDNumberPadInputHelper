@@ -1,0 +1,6 @@
+framework module Pods_KNVUNDNumberPadInputHelper_Example {
+  umbrella header "Pods-KNVUNDNumberPadInputHelper_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}
