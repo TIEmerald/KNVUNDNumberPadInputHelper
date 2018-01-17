@@ -67,6 +67,11 @@ NSString *const KNVUNDNumberPadInputHelper_Using_Decimal_Dot = @"."; // In our s
     return self.rawInputedNumberString;
 }
 
+- (NSDecimalNumber *)rawDisplayingStringDecimalNumber
+{
+    return [NSDecimalNumber decimalNumberWithString:self.rawDisplayingString.length > 0 ? self.rawDisplayingString : @"0"];
+}
+
 - (NSString *)rawInputedNumberString
 {
     return _rawInputedNumberString ?: @"";
