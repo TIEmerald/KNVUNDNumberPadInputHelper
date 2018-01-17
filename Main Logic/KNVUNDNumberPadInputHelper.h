@@ -21,7 +21,7 @@ typedef void(^KNVUNDNumberPadInputHelperTextFieldUpdateBlock)(UITextField *_Null
 @interface KNVUNDNumberPadInputHelper : NSObject
 
 @property (nonatomic) KNVUNDNumberPadType type;
-@property (nonatomic) BOOL shouldResetValueForFirstInput; // If this value be set to Yes, we will reset stored value while user click any button with first time.
+@property (nonatomic) BOOL shouldResetValueForFirstInput; // If this value be set to Yes, we will reset stored value while user click any button with first time. /// Also, the reset value checking will be reset after you assigned rawDisplayingString
 @property (nonatomic, strong, nullable) NSString *rawDisplayingString;
 
 // Customize the raction and Integer Digits if you need.

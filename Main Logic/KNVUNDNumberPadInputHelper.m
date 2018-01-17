@@ -92,6 +92,7 @@ NSString *const KNVUNDNumberPadInputHelper_Using_Decimal_Dot = @"."; // In our s
 {
     self.rawInputedNumberString = rawDisplayingString;
     [self setupTextInDisplayingTextField];
+    _hasHadFirstInput = NO;
 }
 
 - (void)setType:(KNVUNDNumberPadType)type
@@ -193,15 +194,19 @@ NSString *const KNVUNDNumberPadInputHelper_Using_Decimal_Dot = @"."; // In our s
     }
 }
 
-- (void)appendStringToRawInputedNumberString:(NSString *)appendingString
+- (void)appendStringToRawInputedNumberString:(NSString *_Nullable)appendingString
 {
     if([self couldAppendStringToRawInputedNumberString:appendingString]){
         self.rawInputedNumberString = [self.rawInputedNumberString stringByAppendingString:appendingString];
     }
 }
 
-- (BOOL)couldAppendStringToRawInputedNumberString:(NSString *)appendingString
+- (BOOL)couldAppendStringToRawInputedNumberString:(NSString *_Nullable)appendingString
 {
+    if (appendingString == nil) {
+        return NO;// There is no point to appedning nil String.
+    }
+    
     // Might needed Propeties
     NSUInteger maximumFractionDigits = self.maximumFractionDigits;
     NSUInteger maximumIntegerDigits = self.maximumIntegerDigits;
